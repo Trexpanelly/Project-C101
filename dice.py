@@ -1,0 +1,44 @@
+import random
+response = "y"
+def dice_roller(response):
+    while response == "y":
+        num = random.randint(1, 6)    
+        if(num == 1):
+            print("[-----]")
+            print("[     ]")
+            print("[  0  ]")
+            print("[     ]")
+            print("[-----]")
+        if(num == 2):
+            print("[-----]")
+            print("[0    ]")
+            print("[     ]")
+            print("[    0]")
+            print("[-----]")
+        if(num == 3):
+            print("[-----]")
+            print("[0    ]")
+            print("[  0  ]")
+            print("[    0]")
+            print("[-----]")
+        if(num == 4):
+            print("[-----]")
+            print("[0   0]")
+            print("[     ]")
+            print("[0   0]")
+        if(num == 5):
+            print("[-----]")
+            print("[0   0]")
+            print("[  0  ]")
+            print("[0   0]")
+            print("[-----]")
+        if(num == 6):
+            print("[-----]")
+            print("[0   0]")
+            print("[0   0]")
+            print("[0   0]")
+            print("[-----]")
+        response = input("Enter y to continue playing and n to exit")
+        print("\n")
+dice_roller(str("y"))
+
